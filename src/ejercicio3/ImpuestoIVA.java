@@ -1,61 +1,47 @@
 package ejercicio3;
 
-
-
 /**
-
-* Clase que calcula el IVA
-
-*/
+ * 
+ * Clase que calcula el IVA
+ * 
+ */
 
 public class ImpuestoIVA extends Impuesto {
 
+	/**
+	 * 
+	 * Operacion que calcula y devuelve el IVA
+	 * 
+	 * @param ingresos
+	 * 
+	 * @return
+	 * 
+	 */
 
+	public double calcular(double ingresos) {
 
-/**
+		double impuesto;
 
-* Operacion que calcula y devuelve el IVA
+		if (ingresos < 10000) {
 
-* @param ingresos
+			impuesto = ingresos * 0.10;
 
-* @return
+		}
 
-*/
+		else if (ingresos >= 10000 && ingresos < 50000) {
 
-public double calcular(double ingresos) {
+			impuesto = ingresos * 0.15;
 
+		}
 
-double impuesto;
+		else {
 
+			impuesto = ingresos * 0.20;
 
-if (ingresos < 10000) {
+		}
 
-impuesto = ingresos * 0.10;
+		return impuesto;
 
-} 
+	}
 
-else if (ingresos >= 10000 && ingresos < 50000) {
-
-impuesto = ingresos * 0.15;
-
-} 
-
-else {
-
-impuesto = ingresos * 0.20;
-
-}
-
-
-return impuesto;
-
-}
-
-
-}
-
-	
-	
-	
-	
 }

@@ -1,5 +1,11 @@
 package ejercicio3;
 
-public class Impuesto {
-
+public abstract class Impuesto {
+	
+	public abstract double calcular(double ingresos);
+	
+	
+	
+	
+	
 }
